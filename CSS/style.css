@@ -1,0 +1,20 @@
+ .logo{
+    width: 80px;
+    margin-right: 10px;
+ }
+
+ .thumbnail-product{
+   max-width: 250px !important;
+ }
+
+ .sale-final-price{
+   text-decoration: line-through;
+   font-size: 15px;
+ } 
+
+ .sale-disc-price{
+   color: red;
+   font-size: 20px;
+
+
+ }
