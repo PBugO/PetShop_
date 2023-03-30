@@ -20,3 +20,8 @@
  .normal-price{
   font-size: 25px;
 } 
+
+.not-available-price{
+  text-decoration: line-through;
+  font-size: 25px;
+} 
