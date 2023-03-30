@@ -9,12 +9,14 @@
 
  .sale-final-price{
    text-decoration: line-through;
-   font-size: 15px;
+   font-size: 18px;
  } 
 
  .sale-disc-price{
    color: red;
-   font-size: 20px;
-
-
+   font-size: 25px;
  }
+
+ .normal-price{
+  font-size: 25px;
+} 
