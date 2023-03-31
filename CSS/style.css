@@ -31,7 +31,6 @@
   font-size: 25px;
 } 
 
-} 
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -84,4 +83,9 @@ th:nth-child(5), td:nth-child(5) {
 
 .bg-pink {
   background-color: #DC3545;
+}
+
+.logo2{
+  width: 200px;
+  margin-right: 10px;
 }
