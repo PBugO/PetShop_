@@ -49,76 +49,60 @@
                     </form>
                 </div>
             </div>
-            </div>
         </nav>
-
-        <!-- Formulario del mantenedor -->
+        <!-- Historial de ventas -->
         <div class="album py-2 bg-pink">
             <div class="container">
                 <div class="row">
-
-                    <div class="col-md-6">
-                        <h1>Mantenedor de Bodega</h1>
-                        <form>
-                            <div class="form-group">
-                                <label for="categoria">Categoría:</label>
-                                <input type="text" class="form-control" id="categoria" name="categoria" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="cantidad">Cantidad:</label>
-                                <input type="cantidad" class="form-control" id="cantidad" name="cantidad" required>
-                            </div>
-                            <br>
-                            <button type="submit" class="btn btn-primary">Nuevo</button>
-                            <button type="submit" class="btn btn-primary">Agregar</button>
-                        </form>
-                    </div>
-                    <div class="col-md-6">
-                        <img img class="card-img-top thumbnail-product" src="IMG/arena.png" alt="">
-                    </div>
+                    <h1>Historial de ventas</h1>
+                    <table class="table-ventas">
+                        <thead>
+                            <tr>
+                                <th>Nro. boleta</th>
+                                <th>Fecha</th>
+                                <th>Cliente</th>
+                                <th>Suscrito</th>
+                                <th>Total</th>
+                                <th>Estado</th>
+                                <th>Detalle</th>
+                                <th>Cambiar estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>325</td>
+                                <td>18/02/2022</td>
+                                <td>Lee Sunmi</td>
+                                <td>Sí</td>
+                                <td>$15.000</td>
+                                <td>En despacho</td>
+                                <td>Ver detalle</td>
+                                <td>Anulado | Vendido | Despachado | Entregado </td>
+                            </tr>
+                            <tr>
+                                <td>505</td>
+                                <td>09/06/2022</td>
+                                <td>Matthew Bellamy</td>
+                                <td>No</td>
+                                <td>$10.000</td>
+                                <td>Anulado</td>
+                                <td>Ver detalle</td>
+                                <td>Anulado | Vendido | Despachado | Entregado </td>
+                            </tr>
+                            <tr>
+                                <td>325</td>
+                                <td>22/11/2022</td>
+                                <td>Alex Turner</td>
+                                <td>Sí</td>
+                                <td>$25.000</td>
+                                <td>Entregado</td>
+                                <td>Ver detalle</td>
+                                <td>Anulado | Vendido | Despachado | Entregado </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
                 </div>
-
-
-                <br>
-                <!-- Inventario -->
-                <table class="table-bodega">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Categoría</th>
-                            <th>Nombre</th>
-                            <th>Estado</th>
-                            <th>Opciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>01</td>
-                            <td>Gatos</td>
-                            <td>Arena para gatos Easy Clean 4 kg Lavanda</td>
-                            <td>Vendido</td>
-                            <td>Eliminar</td>
-                        </tr>
-                        <tr>
-                            <td>02</td>
-                            <td>Perros</td>
-                            <td> KninoDog 3 kg, Sabor a Carne, Adulto</td>
-                            <td>En Bodega</td>
-                            <td>Eliminar</td>
-                        </tr>
-                        <tr>
-                            <td>03</td>
-                            <td>Perros</td>
-                            <td>Camiseta Sleep Eat Poop Unitalla</td>
-                            <td>Vendido</td>
-                            <td>Eliminar</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
 

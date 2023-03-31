@@ -49,81 +49,119 @@
                     </form>
                 </div>
             </div>
-            </div>
         </nav>
 
-        <!-- Formulario del mantenedor -->
+        <!-- Mantenedor de usuarios -->
         <div class="album py-2 bg-pink">
             <div class="container">
                 <div class="row">
-
                     <div class="col-md-6">
-                        <h1>Mantenedor de Bodega</h1>
+                        <h1>Mantenedor de usuarios</h1>
                         <form>
-                            <div class="form-group">
-                                <label for="categoria">Categoría:</label>
-                                <input type="text" class="form-control" id="categoria" name="categoria" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="cantidad">Cantidad:</label>
-                                <input type="cantidad" class="form-control" id="cantidad" name="cantidad" required>
-                            </div>
+                            <label class="form-label" for="id">ID:</label>
+                            <input type="number" id="id" name="id" required class="form-input">
                             <br>
-                            <button type="submit" class="btn btn-primary">Nuevo</button>
-                            <button type="submit" class="btn btn-primary">Agregar</button>
+                            <label class="form-label" for="tipo-usuario">Tipo de usuario:</label>
+                            <input type="checkbox" id="cliente" name="tipo-usuario" value="cliente">
+                            <label class="form-label" for="cliente">Cliente</label>
+                            <input type="checkbox" id="administrador" name="tipo-usuario" value="administrador">
+                            <label class="form-label" for="administrador">Administrador</label>
+                            <br>
+                            <label class="form-label" for="rut">RUT:</label>
+                            <input type="text" id="rut" name="rut" required class="form-input">
+                            <br>
+                            <label class="form-label" for="nombres">Nombres:</label>
+                            <input type="text" id="nombres" name="nombres" required class="form-input">
+                            <br>
+                            <label class="form-label" for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos" required class="form-input">
+                            <br>
+                            <label class="form-label" for="correo">Correo:</label>
+                            <input type="email" id="correo" name="correo" required class="form-input">
+                            <br>
+                            <label class="form-label" for="direccion">Dirección:</label>
+                            <textarea id="direccion" name="direccion" rows="4" required class="form-input"></textarea>
+                            <br>
+                            <label class="form-label" for="subscripcion">Suscripción:</label>
+                            <input type="checkbox" id="subscripcion" name="subscripcion" value="subscrito">
+                            <label for="subscripcion">Suscripción $3.000 mensuales en beneficio al refugio "Patitas
+                                Seguras"</label>
+                            <br>
+                            <label class="form-label" for="contrasena">Contraseña:</label>
+                            <input type="password" id="contrasena" name="contrasena" required class="form-input">
+                            <button class="btn btn-primary">Generar contraseña</button>
+                            <br>
+                            <button class="btn btn-primary">Guardar</button>
+                            <button class="btn btn-primary">Nuevo</button>
+                            <button class="btn btn-primary">Eliminar</button>
                         </form>
                     </div>
+
+
                     <div class="col-md-6">
-                        <img img class="card-img-top thumbnail-product" src="IMG/arena.png" alt="">
+                        <br>
+                        <img img class="card-img-top thumbnail-product" src="IMG/usuario.jpg" alt="">
+                        <br><br>
+                        <button class="btn btn-primary">Examinar...</button>
                     </div>
                 </div>
-
-
                 <br>
-                <!-- Inventario -->
-                <table class="table-bodega">
+
+                <!-- Usuarios Registrados -->
+                <table class="table-usuarios">
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Categoría</th>
-                            <th>Nombre</th>
-                            <th>Estado</th>
-                            <th>Opciones</th>
+                            <th>Tipo Usuario</th>
+                            <th>RUT</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Correo</th>
+                            <th>Dirección</th>
+                            <th>Suscripción</th>
+
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>01</td>
-                            <td>Gatos</td>
-                            <td>Arena para gatos Easy Clean 4 kg Lavanda</td>
-                            <td>Vendido</td>
-                            <td>Eliminar</td>
+                            <td>010101</td>
+                            <td>Administrador</td>
+                            <td>11.111.111-1</td>
+                            <td>Jensen</td>
+                            <td>Ackles</td>
+                            <td>jackles@gmail.com</td>
+                            <td>Av. Los Olivos 111, Providencia.</td>
+                            <td>No</td>
                         </tr>
+
                         <tr>
-                            <td>02</td>
-                            <td>Perros</td>
-                            <td> KninoDog 3 kg, Sabor a Carne, Adulto</td>
-                            <td>En Bodega</td>
-                            <td>Eliminar</td>
+                            <td>020202</td>
+                            <td>Cliente</td>
+                            <td>22.222.222-2</td>
+                            <td>Alexa</td>
+                            <td>Chung</td>
+                            <td>achung@gmail.com</td>
+                            <td>Av. Siempre Canción 222, Las Condes.</td>
+                            <td>Sí</td>
                         </tr>
+
                         <tr>
-                            <td>03</td>
-                            <td>Perros</td>
-                            <td>Camiseta Sleep Eat Poop Unitalla</td>
-                            <td>Vendido</td>
-                            <td>Eliminar</td>
+                            <td>030303</td>
+                            <td>Cliente</td>
+                            <td>33.333.333-3</td>
+                            <td>Misha</td>
+                            <td>Collins</td>
+                            <td>mcollins@gmail.com</td>
+                            <td>Pasaje Arquitecto Mauricio Dzib, Independencia.</td>
+                            <td>No</td>
                         </tr>
+
                     </tbody>
                 </table>
             </div>
         </div>
 
-
-        <!-- footer -->
+        <!-- Footer -->
         <footer id="footer">
             <div class="container text-center">
                 <p>

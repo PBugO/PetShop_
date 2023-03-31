@@ -1,91 +1,291 @@
- .logo{
-    width: 80px;
-    margin-right: 10px;
+ .logo {
+   width: 80px;
+   margin-right: 10px;
  }
 
- .thumbnail-product{
+ .thumbnail-product {
    max-width: 250px !important;
  }
 
-.file-product{
-  margin: 20px;
-  max-width: 250px !important;
-}
-
- .sale-final-price{
+ .sale-final-price {
    text-decoration: line-through;
    font-size: 18px;
- } 
+ }
 
- .sale-disc-price{
+ .sale-disc-price {
    color: red;
    font-size: 25px;
  }
 
- .normal-price{
-  font-size: 25px;
-} 
+ .normal-price {
+   font-size: 25px;
+ }
 
-.not-available-price{
-  text-decoration: line-through;
-  font-size: 25px;
-} 
+ .not-available-price {
+   text-decoration: line-through;
+   font-size: 25px;
+ }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #f2f2f2;
-}
+ .container {
+   max-width: 1000px;
+   margin: 0 auto;
+   background-color: #f2f2f2;
+   overflow: hidden;
+   display: grid;
+ }
 
-h1 {
-  margin-top: 20px;
-}
+ h1 {
+   margin-top: 20px;
+ }
 
-form {
-  margin-top: 20px;
-}
+ form {
+   margin-top: 20px;
+ }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
+ /* Tabla para los ítems de la página BODEGA */
+ .table-bodega {
+   width: 100%;
+   border-collapse: collapse;
+   table-layout: fixed;
+ }
 
-th, td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
+ .table-bodega th,
+ .table-bodega td {
+   padding: 10px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+ }
 
-th {
-  background-color: #f2f2f2;  
-}
+ .table-bodega th {
+  background-color: #C0C0C0;
+ }
 
-th:nth-child(1), td:nth-child(1) {
+ .table-bodega th:nth-child(1),
+ .table-bodega td:nth-child(1) {
+   width: 10%;
+ }
+
+ .table-bodega th:nth-child(2),
+ .table-bodega td:nth-child(2) {
+   width: 30%;
+ }
+
+ .table-bodega th:nth-child(3),
+ .table-bodega td:nth-child(3) {
+   width: 70%;
+ }
+
+ .table-bodega th:nth-child(4),
+ .table-bodega td:nth-child(4) {
+   width: 30%;
+ }
+
+ .table-bodega th:nth-child(5),
+ .table-bodega td:nth-child(5) {
+   width: 30%;
+ }
+
+ .bg-pink {
+   background-color: #DC3545;
+ }
+
+ /* Tabla para los ítems de la página BOLETA */
+ .table-boleta {
+   width: 100%;
+   border-collapse: collapse;
+   table-layout: fixed;
+ }
+
+ .table-boleta th,
+ .table-boleta td {
+   padding: 10px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+ }
+
+ .table-boleta th {
+  background-color: #C0C0C0;
+ }
+
+ .table-boleta th:nth-child(1),
+ .table-boleta td:nth-child(1) {
+   width: 10%
+ }
+
+ .table-boleta th:nth-child(2),
+ .table-boleta td:nth-child(2) {
+   width: 30%;
+ }
+
+ .table-boleta th:nth-child(3),
+ .table-boleta td:nth-child(3) {
+   width: 10%;
+ }
+
+ .table-boleta th:nth-child(4),
+ .table-boleta td:nth-child(4) {
+   width: 10%;
+ }
+
+ .table-boleta th:nth-child(5),
+ .table-boleta td:nth-child(5) {
+   width: 10%;
+ }
+
+ .table-boleta th:nth-child(6),
+ .table-boleta td:nth-child(6) {
+   width: 10%;
+ }
+
+ .table-boleta th:nth-child(7),
+ .table-boleta td:nth-child(7) {
+   width: 10%;
+ }
+
+ .table-boleta th:nth-child(8),
+ .table-boleta td:nth-child(8) {
+   width: 10%;
+ }
+
+
+ /* Etiquetas con cuadros de texto de Subtotal-IVA-Total */
+
+
+ .box {
+   font-weight: bold;
+   display: grid;
+   grid-template-columns: 120px 1fr;
+   margin-bottom: 10px;
+ }
+
+ .box label {
+   margin-right: 10px;
+   text-align: right;
+ }
+
+ .box input[type="text"] {
+   width: 100%;
+   box-sizing: border-box;
+ }
+/* Cuadros de estado de envío BOLETA */
+ .estado-envio {
+   display: inline-block;
+   padding: 5px;
+   color: white;
+   font-weight: bold;
+   border-radius: 5px;
+ }
+
+ .enviado {
+   background-color: #FFA07A;
+ }
+
+ .en-proceso {
+   background-color: #FA8072;
+ }
+
+ .cancelado {
+   background-color: #CD5C5C	;
+ }
+
+ /* Tabla para ítems página VENTAS */
+ .table-ventas th {
+  background-color: #C0C0C0;
+  }
+  
+  .table-ventas th:nth-child(1),
+  .table-ventas td:nth-child(1) {
+  width: 5%
+  }
+  
+  .table-ventas th:nth-child(2),
+  .table-ventas td:nth-child(2) {
   width: 10%;
-}
-
-th:nth-child(2), td:nth-child(2) {
+  }
+  
+  .table-ventas th:nth-child(3),
+  .table-ventas td:nth-child(3) {
+  width: 20%;
+  }
+  
+  .table-ventas th:nth-child(4),
+  .table-ventas td:nth-child(4) {
+  width: 10%;
+  }
+  
+  .table-ventas th:nth-child(5),
+  .table-ventas td:nth-child(5) {
+  width: 10%;
+  }
+  
+  .table-ventas th:nth-child(6),
+  .table-ventas td:nth-child(6) {
+  width: 10%;
+  }
+  
+  .table-ventas th:nth-child(7),
+  .table-ventas td:nth-child(7) {
+  width: 10%;
+  }
+  
+  .table-ventas th:nth-child(8),
+  .table-ventas td:nth-child(8) {
   width: 30%;
-}
+  }
 
-th:nth-child(3), td:nth-child(3) {
-  width: 70%;
-}
+   /* Tabla para ítems página USUARIOS */
+   .table-usuarios th {
+    background-color: #C0C0C0;
+  }
+  
+  .table-usuarios th:nth-child(1),
+  .table-usuarios td:nth-child(1) {
+    width: 10%;
+  }
+  
+  .table-usuarios th:nth-child(2),
+  .table-usuarios td:nth-child(2) {
+    width: 10%;
+  }
+  
+  .table-usuarios th:nth-child(3),
+  .table-usuarios td:nth-child(3) {
+    width: 10%;
+  }
+  
+  .table-usuarios th:nth-child(4),
+  .table-usuarios td:nth-child(4) {
+    width: 10%;
+  }
+  
+  .table-usuarios th:nth-child(5),
+  .table-usuarios td:nth-child(5) {
+    width: 10%;
+  }
+  
+  .table-usuarios th:nth-child(6),
+  .table-usuarios td:nth-child(6) {
+    width: 15%;
+  }
+  
+  .table-usuarios th:nth-child(7),
+  .table-usuarios td:nth-child(7) {
+    width: 20%;
+  }
+  
+  .table-usuarios th:nth-child(8),
+  .table-usuarios td:nth-child(8) {
+    width: 5%;
+  }
 
-th:nth-child(4), td:nth-child(4) {
-  width: 30%;
-}
+  .form-input {
+    width: 350px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+   
+  }
 
-th:nth-child(5), td:nth-child(5) {
-  width: 30%;
-}
-
-.bg-pink {
-  background-color: #DC3545;
-}
-
-.logo2{
-  width: 200px;
-  margin-right: 10px;
+.form-label{
+  display: inline-block;
+  width: 80px;
 }

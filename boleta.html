@@ -49,79 +49,85 @@
                     </form>
                 </div>
             </div>
-            </div>
         </nav>
-
-        <!-- Formulario del mantenedor -->
+        <!-- Detalle de boleta -->
         <div class="album py-2 bg-pink">
             <div class="container">
                 <div class="row">
-
+                    <h1>Detalle de boleta</h1>
+                    
                     <div class="col-md-6">
-                        <h1>Mantenedor de Bodega</h1>
-                        <form>
-                            <div class="form-group">
-                                <label for="categoria">Categoría:</label>
-                                <input type="text" class="form-control" id="categoria" name="categoria" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="cantidad">Cantidad:</label>
-                                <input type="cantidad" class="form-control" id="cantidad" name="cantidad" required>
-                            </div>
-                            <br>
-                            <button type="submit" class="btn btn-primary">Nuevo</button>
-                            <button type="submit" class="btn btn-primary">Agregar</button>
-                        </form>
+                        <div class="estado-envio enviado">En tránsito</div>
+                        <div class="estado-envio en-proceso">En proceso</div>
+                        <div class="estado-envio cancelado">Cancelado</div>
                     </div>
-                    <div class="col-md-6">
-                        <img img class="card-img-top thumbnail-product" src="IMG/arena.png" alt="">
+                    
+                    <div class="col-md-12">
+                        <table class="table-boleta">
+                            <thead>
+                                <tr>
+                                    <th>Categoría</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Suscriptor</th>
+                                    <th>Oferta</th>
+                                    <th>Desc. total</th>
+                                    <th>Descuentos</th>
+                                    <th>Precio a pagar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Gatos</td>
+                                    <td>Arena para gatos Easy Clean 4 kg Lavanda</td>
+                                    <td>$3.900</td>
+                                    <td>5%</td>
+                                    <td>10%</td>
+                                    <td>15%</td>
+                                    <td>$585</td>
+                                    <td>$3.315</td>
+                                </tr>
+                                <tr>
+                                    <td>Perros</td>
+                                    <td> KninoDog 3 kg, Sabor a Carne, Adulto</td>
+                                    <td>$13.000</td>
+                                    <td>0%</td>
+                                    <td>10%</td>
+                                    <td>10%</td>
+                                    <td>$1.300</td>
+                                    <td>$11.700</td>
+                                </tr>
+                                <tr>
+                                    <td>Perros</td>
+                                    <td>Camiseta Sleep Eat Poop Unitalla</td>
+                                    <td>$13.000</td>
+                                    <td>0%</td>
+                                    <td>0%</td>
+                                    <td>0%</td>
+                                    <td>$0</td>
+                                    <td>$13.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <label for="texto1">Subtotal</label>
+                                <input type="text" id="texto1">
+                            </div>
+                            <div class="box">
+                                <label for="texto2">IVA(19%)</label>
+                                <input type="text" id="texto2">
+                            </div>
+                            <div class="box">
+                                <label for="texto3">Total</label>
+                                <input type="text" id="texto3">
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
-                <br>
-                <!-- Inventario -->
-                <table class="table-bodega">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Categoría</th>
-                            <th>Nombre</th>
-                            <th>Estado</th>
-                            <th>Opciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>01</td>
-                            <td>Gatos</td>
-                            <td>Arena para gatos Easy Clean 4 kg Lavanda</td>
-                            <td>Vendido</td>
-                            <td>Eliminar</td>
-                        </tr>
-                        <tr>
-                            <td>02</td>
-                            <td>Perros</td>
-                            <td> KninoDog 3 kg, Sabor a Carne, Adulto</td>
-                            <td>En Bodega</td>
-                            <td>Eliminar</td>
-                        </tr>
-                        <tr>
-                            <td>03</td>
-                            <td>Perros</td>
-                            <td>Camiseta Sleep Eat Poop Unitalla</td>
-                            <td>Vendido</td>
-                            <td>Eliminar</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
-
 
         <!-- footer -->
         <footer id="footer">
