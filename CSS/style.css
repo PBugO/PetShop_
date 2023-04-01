@@ -323,3 +323,43 @@ footer {
   width: 200px;
   margin-right: 10px;
 }
+
+/* Tabla para ítems página COMPRAS */
+.table-compras th {
+  background-color: #C0C0C0;
+  }
+  
+  .table.compras th:nth-child(1),
+  .table.compras td:nth-child(1) {
+  width: 10%;
+  }
+  
+  .table.compras th:nth-child(2),
+  .table.compras td:nth-child(2) {
+  width: 10%;
+  }
+  
+  .table.compras th:nth-child(3),
+  .table.compras td:nth-child(3) {
+  width: 10%;
+  }
+  
+  .table.compras th:nth-child(4),
+  .table.compras td:nth-child(4) {
+  width: 10%;
+  }
+  
+  .table.compras th:nth-child(5),
+  .table.compras td:nth-child(5) {
+  width: 10%;
+  }
+  
+  .table.compras th:nth-child(6),
+  .table.compras td:nth-child(6) {
+  width: 15%;
+  }
+  
+  .table.compras th:nth-child(7),
+  .table.compras td:nth-child(7) {
+  width: 20%;
+  }
