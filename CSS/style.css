@@ -167,6 +167,16 @@
    width: 100%;
    box-sizing: border-box;
  }
+
+ .col-md-4 {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
 /* Cuadros de estado de envío BOLETA */
  .estado-envio {
    display: inline-block;
