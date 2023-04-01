@@ -308,3 +308,8 @@ footer {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.logo2{
+  width: 200px;
+  margin-right: 10px;
+}
