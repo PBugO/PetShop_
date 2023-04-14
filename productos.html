@@ -55,11 +55,11 @@
         <!--    Rut    -->
         <div class="album py-2 bg-pink">
             <div class="container">
-            <div class="row">
+             <div class="row">
                 <div class="col-sm-2 col-md-6" id="datos">
                     <h1>Mantenedor de productos</h1>
 
-                    <div class="mb-3">
+                    <div class="form-text">
                       <label for="Rut"class="form-label">ID:</label>
                       <input required placeholder="" 
                           type="rut" name="rut" class="form-input"
@@ -76,7 +76,7 @@
                     <div class="col-mb-3">
                         <label for="Rut"class="form-label">Categoría: </label>
                         <select>
-                            <option value="opcion1"></option>
+                            <option value="opcion1">-Seleccionar-</option>
                             <option value="opcion2">Perro</option>
                             <option value="opcion3">Gato</option>
                             <option value="opcion4">Conejo</option>
@@ -103,15 +103,10 @@
                     </div>
 
                     <!--Descripción-->
+
                     <div class="mb-3">
-                        <form>
-                            <label for="Descripción">Descripción: </label>
-                            <textarea id="Descripción" name="Descripción" rows="4" cols="45"></textarea>
-                          </form>
-                        <div id="DescripciónHelp" class="form-text">
-                          </div>
-                        <div class="invalid-feedback">
-                        </div>
+                        <label required for="Precio" class="form-label">Descripción: </label>
+                        <input type="Descripción" class="form-input" id="Descripción">
                       </div>
                     
                       <!--Precio-->
@@ -143,15 +138,14 @@
                 </div>
 
                      <!--Foto del producto-->
-                <div class="col-sm-2 col-md-6 text-center" id="foto">
-                    <br>
-                    <img src="img/churu_gato_1.png" alt="">
+                     <div class="col-sm-2 col-md-6 text-center" id="foto">
+                        <img src="img/churu_gato_1.png" alt="">
                         <img img class="card-img-top thumbnail-product" src="" alt="">
-                        <br><br>
-                        <button class="btn btn-primary">Examinar...</button>
-                    </div>
-                </div>
-                <br>
+                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                      </div>
+                    
+                            
+                            <br>
                                 <!-- Usuarios Registrados -->
                                 <table class="table-usuarios">
                                     <thead>
@@ -206,8 +200,9 @@
                                         </tr>             
                                     </tbody>
                                 </table>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
         
         <!-- Footer -->
         <footer id="footer">
