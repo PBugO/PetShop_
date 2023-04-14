@@ -34,6 +34,10 @@
    display: grid;
  }
 
+ .equal-height {
+   height: 400px;
+ }
+
  h1 {
    margin-top: 20px;
  }
@@ -57,7 +61,7 @@
  }
 
  .table-bodega th {
-  background-color: #C0C0C0;
+   background-color: #C0C0C0;
  }
 
  .table-bodega th:nth-child(1),
@@ -104,7 +108,7 @@
  }
 
  .table-boleta th {
-  background-color: #C0C0C0;
+   background-color: #C0C0C0;
  }
 
  .table-boleta th:nth-child(1),
@@ -169,15 +173,15 @@
  }
 
  .col-md-4 {
-  float: right;
-}
+   float: right;
+ }
 
-.clearfix {
-  clear: both;
-}
+ .clearfix {
+   clear: both;
+ }
 
 
-/* Cuadros de estado de envío BOLETA */
+ /* Cuadros de estado de envío BOLETA */
  .estado-envio {
    display: inline-block;
    padding: 5px;
@@ -195,171 +199,81 @@
  }
 
  .cancelado {
-   background-color: #CD5C5C	;
+   background-color: #CD5C5C;
  }
 
- /* Tabla para ítems página VENTAS */
- .table-ventas th {
-  background-color: #C0C0C0;
-  }
-  
-  .table-ventas th:nth-child(1),
-  .table-ventas td:nth-child(1) {
-  width: 5%
-  }
-  
-  .table-ventas th:nth-child(2),
-  .table-ventas td:nth-child(2) {
-  width: 10%;
-  }
-  
-  .table-ventas th:nth-child(3),
-  .table-ventas td:nth-child(3) {
-  width: 20%;
-  }
-  
-  .table-ventas th:nth-child(4),
-  .table-ventas td:nth-child(4) {
-  width: 10%;
-  }
-  
-  .table-ventas th:nth-child(5),
-  .table-ventas td:nth-child(5) {
-  width: 10%;
-  }
-  
-  .table-ventas th:nth-child(6),
-  .table-ventas td:nth-child(6) {
-  width: 10%;
-  }
-  
-  .table-ventas th:nth-child(7),
-  .table-ventas td:nth-child(7) {
-  width: 10%;
-  }
-  
-  .table-ventas th:nth-child(8),
-  .table-ventas td:nth-child(8) {
-  width: 30%;
-  }
+ .form-input {
+   width: 350px;
+   box-sizing: border-box;
+   margin-bottom: 10px;
 
-   /* Tabla para ítems página USUARIOS */
-   .table-usuarios th {
-    background-color: #C0C0C0;
-  }
-  
-  .table-usuarios th:nth-child(1),
-  .table-usuarios td:nth-child(1) {
-    width: 10%;
-  }
-  
-  .table-usuarios th:nth-child(2),
-  .table-usuarios td:nth-child(2) {
-    width: 10%;
-  }
-  
-  .table-usuarios th:nth-child(3),
-  .table-usuarios td:nth-child(3) {
-    width: 10%;
-  }
-  
-  .table-usuarios th:nth-child(4),
-  .table-usuarios td:nth-child(4) {
-    width: 10%;
-  }
-  
-  .table-usuarios th:nth-child(5),
-  .table-usuarios td:nth-child(5) {
-    width: 10%;
-  }
-  
-  .table-usuarios th:nth-child(6),
-  .table-usuarios td:nth-child(6) {
-    width: 15%;
-  }
-  
-  .table-usuarios th:nth-child(7),
-  .table-usuarios td:nth-child(7) {
-    width: 20%;
-  }
-  
-  .table-usuarios th:nth-child(8),
-  .table-usuarios td:nth-child(8) {
-    width: 5%;
-  }
+ }
 
-  .form-input {
-    width: 350px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-   
-  }
+ .form-label {
+   display: inline-block;
+   width: 80px;
+ }
 
-.form-label{
-  display: inline-block;
-  width: 80px;
-}
+ body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+ }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+ footer {
+   margin-top: auto;
+ }
 
-footer {
-  margin-top: auto;
-}
+ .center {
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+ }
 
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+ .logo2 {
+   width: 200px;
+   margin-right: 10px;
+ }
 
-.logo2{
-  width: 200px;
-  margin-right: 10px;
-}
+ /* Tabla para ítems página COMPRAS */
+ .table-compras th {
+   background-color: #C0C0C0;
+ }
 
-/* Tabla para ítems página COMPRAS */
-.table-compras th {
-  background-color: #C0C0C0;
-  }
-  
-  .table.compras th:nth-child(1),
-  .table.compras td:nth-child(1) {
-  width: 10%;
-  }
-  
-  .table.compras th:nth-child(2),
-  .table.compras td:nth-child(2) {
-  width: 10%;
-  }
-  
-  .table.compras th:nth-child(3),
-  .table.compras td:nth-child(3) {
-  width: 10%;
-  }
-  
-  .table.compras th:nth-child(4),
-  .table.compras td:nth-child(4) {
-  width: 10%;
-  }
-  
-  .table.compras th:nth-child(5),
-  .table.compras td:nth-child(5) {
-  width: 10%;
-  }
-  
-  .table.compras th:nth-child(6),
-  .table.compras td:nth-child(6) {
-  width: 15%;
-  }
-  
-  .table.compras th:nth-child(7),
-  .table.compras td:nth-child(7) {
-  width: 20%;
-  }
+ .table.compras th:nth-child(1),
+ .table.compras td:nth-child(1) {
+   width: 10%;
+ }
+
+ .table.compras th:nth-child(2),
+ .table.compras td:nth-child(2) {
+   width: 10%;
+ }
+
+ .table.compras th:nth-child(3),
+ .table.compras td:nth-child(3) {
+   width: 10%;
+ }
+
+ .table.compras th:nth-child(4),
+ .table.compras td:nth-child(4) {
+   width: 10%;
+ }
+
+ .table.compras th:nth-child(5),
+ .table.compras td:nth-child(5) {
+   width: 10%;
+ }
+
+ .table.compras th:nth-child(6),
+ .table.compras td:nth-child(6) {
+   width: 15%;
+ }
+
+ .table.compras th:nth-child(7),
+ .table.compras td:nth-child(7) {
+   width: 20%;
+ }

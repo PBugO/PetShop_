@@ -38,10 +38,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="registro.html">Registrarse</a>
-                          </li>
-                          <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" href="ingresar.html">Iniciar Sesión</a>
-                          </li>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -57,40 +57,79 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h1>Mantenedor de usuarios</h1>
+
                         <form>
-                            <label class="form-label" for="id">ID:</label>
-                            <input type="number" id="id" name="id" required class="form-input">
-                            <br>
-                            <label class="form-label" for="tipo-usuario">Tipo de usuario:</label>
-                            <input type="checkbox" id="cliente" name="tipo-usuario" value="cliente">
-                            <label class="form-label" for="cliente">Cliente</label>
-                            <input type="checkbox" id="administrador" name="tipo-usuario" value="administrador">
-                            <label class="form-label" for="administrador">Administrador</label>
-                            <br>
-                            <label class="form-label" for="rut">RUT:</label>
-                            <input type="text" id="rut" name="rut" required class="form-input">
-                            <br>
-                            <label class="form-label" for="nombres">Nombres:</label>
-                            <input type="text" id="nombres" name="nombres" required class="form-input">
-                            <br>
-                            <label class="form-label" for="apellidos">Apellidos:</label>
-                            <input type="text" id="apellidos" name="apellidos" required class="form-input">
-                            <br>
-                            <label class="form-label" for="correo">Correo:</label>
-                            <input type="email" id="correo" name="correo" required class="form-input">
-                            <br>
-                            <label class="form-label" for="direccion">Dirección:</label>
-                            <textarea id="direccion" name="direccion" rows="4" required class="form-input"></textarea>
-                            <br>
-                            <label class="form-label" for="subscripcion">Suscripción:</label>
-                            <input type="checkbox" id="subscripcion" name="subscripcion" value="subscrito">
-                            <label for="subscripcion">Suscripción $3.000 mensuales en beneficio al refugio "Patitas
-                                Seguras"</label>
-                            <br>
-                            <label class="form-label" for="contrasena">Contraseña:</label>
-                            <input type="password" id="contrasena" name="contrasena" required class="form-input">
-                            <button class="btn btn-primary">Generar contraseña</button>
-                            <br>
+                            <div class="form-group row">
+                                <label for="inputId" class="col-sm-2 col-form-label">ID</label>
+                                <div class="col-sm-10">
+                                    <input type="id" class="form-control" id="inputId" placeholder="ID">
+                                </div>
+                            </div>
+
+                            <label>Tipo de usuario:</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Cliente</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Administrador</label>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputRut" class="col-sm-2 col-form-label">RUT</label>
+                                <div class="col-sm-10">
+                                    <input type="rut" class="form-control" id="inputRut" placeholder="RUT">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputNombres" class="col-sm-2 col-form-label">Nombres</label>
+                                <div class="col-sm-10">
+                                    <input type="nombres" class="form-control" id="inputNombres" placeholder="Nombres">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputApellidos" class="col-sm-2 col-form-label">Apellidos</label>
+                                <div class="col-sm-10">
+                                    <input type="apellidos" class="form-control" id="inputApellidos"
+                                        placeholder="Apellidos">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputCorreo" class="col-sm-2 col-form-label">Correo</label>
+                                <div class="col-sm-10">
+                                    <input type="correo" class="form-control" id="inputCorreo" placeholder="Correo">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Dirección</label>
+                                <div class="col-sm-10">
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                              </div>
+
+                              <label>Suscripción:</label>
+                              <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                      value="option1">
+                                  <label class="form-check-label" for="inlineRadio1">Deseo inscribirme por $3.000 mensuales 
+                                    en beneficio al refugio de "Huellitas Seguras"</label>
+                              </div>
+                              <br>
+
+                              <div class="input-group mb-2 mr-sm-2 d-flex">
+                                <label class="sr-only" for="inlineFormInputGroupUsername2">Contraseña:</label>
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Constraseña">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-primary">Generar contraseña</button>
+                                </div>
+                            </div><br>
                             <button class="btn btn-primary">Guardar</button>
                             <button class="btn btn-primary">Nuevo</button>
                             <button class="btn btn-primary">Eliminar</button>
@@ -98,17 +137,18 @@
                     </div>
 
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 text-center">
                         <br>
                         <img img class="card-img-top thumbnail-product" src="IMG/usuario.jpg" alt="">
                         <br><br>
-                        <button class="btn btn-primary">Examinar...</button>
+                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                     </div>
                 </div>
                 <br>
 
+
                 <!-- Usuarios Registrados -->
-                <table class="table-usuarios">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>ID</th>

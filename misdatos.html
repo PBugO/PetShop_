@@ -57,13 +57,12 @@
         <div class="album py-2 bg-pink">
             <div class="container">
             <div class="row">
-                <div class="col-sm-2 col-md-4" id="datos">
+                <div class="col-sm-2 col-md-5" id="datos">
                     <h1>Mis datos</h1>
-
                     <div class="mb-3">
                       <label for="Rut"class="form-label">Rut:</label>
                       <input required placeholder="Ej 10.123.123-k" 
-                          type="rut" name="rut" class="form-input"
+                          type="rut" name="rut" class="form-control"
                           id="rut" aria-describedby="RutHelp">
                       <div id="RutHelp" class="form-text">
                         Escribe el RUT con punto y con guión.</div>
@@ -76,7 +75,7 @@
                     <div class="mb-3">
                       <label for="Nombres" class="form-label">Nombres: </label>
                       <input required placeholder ="Ej Bruce Mario" 
-                          type="text" class="form-input"
+                          type="text" class="form-control"
                           id="Nombre" aria-describedby="NombresHelp">
                       <div id="NombreHelp" class="form-text">
                         </div>
@@ -89,7 +88,7 @@
                     <div class="mb-3">
                       <label for="Apellidos" class="form-label">Apellidos: </label>
                       <input required placeholder="Ej Wayne Perez" 
-                          type="text" class="form-input"
+                          type="text" class="form-control"
                           id="Apellido" aria-describedby="ApelldosHelp">
                       <div id="ApellidosHelp" class="form-text">
                         </div>
@@ -102,7 +101,7 @@
                     <div class="mb-3">
                       <label for="Correo" class="form-label">Correo: </label>
                       <input required placeholder="Ej BruceWayneChad@gmail.com" 
-                          type="text" class="form-input"
+                          type="text" class="form-control"
                           id="Correo" aria-describedby="CorreoHelp">
                       <div id="CorreoHelp" class="form-text">
                         </div>
@@ -115,7 +114,7 @@
                     <div class="mb-3">
                         <label for="Descripción" class="form-label">Dirección: </label>
                         <input required placeholder=""  
-                            type="text" class="form-input"
+                            type="text" class="form-control"
                             id="Correo" aria-describedby="DescripciónHelp">
                         <div id="DescripciónHelp" class="form-text">
                           </div>
@@ -135,27 +134,32 @@
                     <!--Password-->
                     <div class="mb-3">
                       <label required for="Contraseña" class="form-label">Contraseña: </label>
-                      <input type="Contraseña" class="form-input" id="Contraseña">
+                      <input type="Contraseña" class="form-control" id="Contraseña">
                     </div>
                     
                     <!--Repetir Contraseña-->
                     <div class="mb-3">
-                      <label required for="RepetirContraseña" class="form-label">Repetir Contraseña: </label>
-                      <input type="RepetirContraseña" class="form-input" id="RepetirContraseña">
+                      <label required for="RepetirContraseña" class="form">Repetir Contraseña: </label>
+                      <input type="RepetirContraseña" class="form-control" id="RepetirContraseña">
                     </div>
+                    <br>
 
                     <!--Botones-->
                     <div class="row" id="botones">
                         <div class="col text-center">
                           <button type="submit" class="btn btn-primary">Guardar</button>
                           <button type="reset" class="btn btn-primary">Limpiar</button>
+                          <br><br>
                         </div>
                     </div>
                 </div>
         <!--Foto del registrado-->
-                      <div class="col-sm-2 col-md-6 text-center" id="foto">
-                        <img class="logo2" src="img/usuario.jpg" alt="">
+                      <div class="col-md-6 text-center" id="foto">
+                        <br>
+                        <br>
+                        <img class="card-img-top thumbnail-product" src="img/usuario.jpg" alt="">
                         <img img class="card-img-top thumbnail-product" src="" alt="">
+                        <br>
                         <br>
                         <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
                       </div>
