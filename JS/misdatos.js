@@ -105,3 +105,35 @@ $(document).ready(function () {
     });
 });
 
+//contraseña
+$(document).ready(function () {
+    $('#Contraseña').on('input', function () {
+        var password = $(this).val();
+        var maskedPassword = '';
+
+        for (var i = 0; i < password.length; i++) {
+            maskedPassword += '*';
+        }
+
+        $(this).attr('type', 'password');
+        $(this).val(maskedPassword);
+    });
+});
+
+
+//Repetir contraseña
+$(document).ready(function () {
+    $('#RepetirContraseña').on('input', function () {
+        var password = $(this).val();
+        var maskedPassword = '';
+
+        for (var i = 0; i < password.length; i++) {
+            maskedPassword += '*';
+        }
+
+        $(this).attr('type', 'password');
+        $(this).val(maskedPassword);
+    });
+});
+
+
